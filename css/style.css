@@ -1,0 +1,785 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* =============================================
+Common Css
+============================================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+/* =============================================
+Top nav Css
+============================================= */
+.tobNav {
+  background: #F5F5F5;
+  padding: 14px;
+}
+
+.tobNav p {
+  color: #666;
+  font-size: 14px;
+}
+
+.tobNav ul li {
+  padding: 0 16px;
+  border-right: 1px solid #D9D9D9;
+}
+
+.tobNav ul li:last-child {
+  border-right: none;
+  padding: 0 0 0 16px;
+}
+
+.tobNav ul li a {
+  color: #666;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-left: 6px;
+}
+
+.tobNav ul li a img {
+  margin-right: 6px;
+}
+
+/* =============================================
+Middle Nav Css
+============================================= */
+.middleNav {
+  padding: 21px 0;
+}
+
+.middleNav .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  cursor: pointer;
+}
+
+.middleright {
+  gap: 30px;
+}
+
+.middleright form {
+  width: 507px;
+  height: 48px;
+  border-radius: 10px;
+  background: #F3F9FB;
+  padding: 0 16px;
+}
+
+.middleright form .search {
+  gap: 10px;
+}
+
+.middleright form .search input {
+  color: #666;
+  font-size: 16px;
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 447px;
+}
+
+.middleright ul li {
+  padding: 0 20px;
+  border-right: 1px solid #D9D9D9;
+}
+
+.middleright ul li:last-child {
+  padding: 0 0 0 20px;
+  border-right: none;
+}
+
+.middleright ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  color: #666;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+/* =============================================
+product nav
+============================================= */
+.productWrap {
+  padding: 17px;
+  border: 1px solid #EDEDED;
+  margin-bottom: 20px;
+}
+
+.productMenu {
+  gap: 14px;
+}
+
+.productMenu .selectOption {
+  padding: 9px 14px;
+  border-radius: 18px;
+  background: #F3F9FB;
+}
+
+.productMenu .selectOption select {
+  background: transparent;
+  padding-right: 6px;
+  border: none;
+  color: #000;
+  font-size: 13px;
+  font-weight: 500;
+  outline: none;
+  cursor: pointer;
+}
+
+
+
+.productMenu .selectOption:hover,
+.productMenu .selectOption select:hover {
+  background: #008ECC;
+  color: #fff;
+}
+
+.productMenu .selectOption:focus:active,
+.productMenu .selectOption select:focus:active {
+  background: #008ECC;
+  color: #fff;
+}
+
+/* =============================================
+Hero section
+============================================= */
+header .hero {
+  width: 1200px;
+  border-radius: 16px;
+  margin-bottom: 120px;
+  background: #212844;
+  position: relative;
+  z-index: 1;
+}
+
+header .hero .herobg1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-top-right-radius: 16px;
+  z-index: -2;
+}
+
+header .hero .herobg2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -2;
+}
+
+header .hero .herobg3 {
+  position: absolute;
+  bottom: 0;
+  right: 233px;
+  z-index: -2;
+}
+
+header .hero .herobg4 {
+  position: absolute;
+  bottom: 0;
+  right: 248px;
+  z-index: -2;
+}
+
+header .hero .heroWrapar {
+  position: relative;
+  z-index: 5;
+}
+
+/* ==================
+start hero slider
+================== */
+header .hero .heroWrapar .slick-arrow {
+  width: 86px;
+  height: 86px;
+  background: #F3F9FB;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+header .hero .heroWrapar .slick-prev {
+  position: absolute;
+  top: 115px;
+  left: -48px;
+  z-index: 5;
+}
+
+header .hero .heroWrapar .slick-next {
+  position: absolute;
+  top: 115px;
+  right: -48px;
+}
+
+header .hero .heroWrapar .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  gap: 10px;
+  bottom: 35px;
+  left: 91px;
+}
+
+header .hero .heroWrapar .slick-dots li button {
+  text-indent: -9999999px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+  border: none;
+}
+
+header .hero .heroWrapar .slick-dots li.slick-active button {
+  background: #fff;
+  width: 30px;
+  height: 10px;
+  border-radius: 5px;
+}
+
+/* ==================
+end hero slider
+================== */
+header .hero .heroWrapar .smartWatch {
+  align-items: flex-start;
+  padding: 24px 125px 22px 90px;
+}
+
+header .hero .smartWatch .smartWatchText h3 {
+  color: #FFF;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 30px;
+  margin-top: 16px;
+}
+
+header .hero .smartWatch .smartWatchText h1 {
+  color: #FFF;
+  font-size: 63px;
+  font-weight: 700;
+  line-height: 63px;
+  margin: 20px 0;
+}
+
+header .hero .smartWatch .smartWatchText h4 {
+  color: #FFF;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+
+
+
+/* =============================================
+Smartphones section
+============================================= */
+.sectionTop {
+  border-bottom: 1px solid #EDEDED;
+  margin-bottom: 40px;
+}
+
+.sectionTop h2 {
+  color: #666;
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 16px;
+  border-bottom: 3px solid #008ECC;
+}
+
+.sectionTop h2 span {
+  color: #008ECC;
+}
+
+.sectionTop p {
+  color: #222;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+
+#smartphones {
+  margin-bottom: 120px;
+}
+
+#smartphones .allSmartphones .smartphone {
+  width: 227px;
+  border-radius: 16px;
+  border: 1px solid #EDEDED;
+  background: #F5F5F5;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+
+#smartphones .allSmartphones .smartphone:hover {
+  border: 1px solid #008ECC;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.05), 0px 6px 13px 0px rgba(0, 0, 0, 0.05), 0px 24px 24px 0px rgba(0, 0, 0, 0.04), 0px 54px 33px 0px rgba(0, 0, 0, 0.03), 0px 97px 39px 0px rgba(0, 0, 0, 0.01), 0px 151px 42px 0px rgba(0, 0, 0, 0.00);
+}
+
+#smartphones .allSmartphones .smartphone .ditels {
+  padding: 11px;
+}
+
+#smartphones .allSmartphones .smartphone .img {
+  height: 188px;
+  text-align: center;
+  background: #F5F5F5;
+  border-radius: 16px 16px 0 0;
+  position: relative;
+}
+
+.smartphone .img .offer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 51px;
+  height: 53px;
+  border-radius: 0px 16px;
+  background: #008ECC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.smartphone .img .offer p {
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.smartphone h4 {
+  color: #222;
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 12px;
+}
+
+.smartphone h5 {
+  color: #222;
+  font-size: 16px;
+  font-weight: 700;
+  margin-left: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid #EDEDED;
+}
+
+.smartphone h5 span {
+  text-decoration-line: strikethrough;
+}
+
+.smartphone p {
+  color: #249B3E;
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 12px;
+  margin-top: 10px;
+}
+
+/* =============================================
+Top Categories section
+============================================= */
+#topCategories {
+  margin-bottom: 120px;
+}
+
+#topCategories .topPorduct .item {
+  width: 132px;
+  cursor: pointer;
+}
+
+#topCategories .topPorduct .item .border {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 132px;
+  height: 132px;
+  background: #F5F5F5;
+  border-radius: 50%;
+  transition: all .5s ease;
+}
+
+#topCategories .topPorduct .item .border:hover {
+  border: 1px solid #008ECC;
+  filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.05)) drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.05)) drop-shadow(1px 10px 10px rgba(0, 0, 0, 0.04)) drop-shadow(2px 22px 13px rgba(0, 0, 0, 0.03)) drop-shadow(4px 40px 16px rgba(0, 0, 0, 0.01)) drop-shadow(6px 62px 17px rgba(0, 0, 0, 0.00));
+}
+
+#topCategories .topPorduct h5 {
+  color: #222;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+/* =============================================
+Top Electronics Brands section
+============================================= */
+#topElectroniceBrand {
+  margin-bottom: 120px;
+}
+
+#topElectroniceBrand .allBrand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  position: relative;
+}
+
+/* ==================
+Top Electronice Brand slider
+================== */
+#topElectroniceBrand .allBrand .slick-dots {
+  position: absolute;
+  /* margin-top: 30px; */
+  bottom: -50px;
+  left: 600px;
+  display: flex;
+  gap: 10px;
+}
+
+#topElectroniceBrand .allBrand .slick-dots li button {
+  text-indent: -9999999px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #D9D9D9;
+  cursor: pointer;
+  border: none;
+}
+
+#topElectroniceBrand .allBrand .slick-dots li.slick-active button {
+  background: #008ECC;
+  width: 30px;
+  height: 10px;
+  border-radius: 5px;
+}
+
+#topElectroniceBrand .allBrand .slick-prev {
+  display: none !important;
+
+}
+
+#topElectroniceBrand .allBrand .slick-next {
+  display: none !important;
+}
+
+/* ==================
+End Top Electronice Brand slider
+================== */
+#topElectroniceBrand .allBrand .applePhone,
+#topElectroniceBrand .allBrand .realmePhone {
+  width: 389px;
+  border-radius: 16px;
+  background: #313131;
+  padding: 20px 44px 20px 20px;
+  position: relative;
+  z-index: 1;
+  margin-right: 16px;
+}
+
+#topElectroniceBrand .allBrand .realmePhone {
+  background: #FFF3CC;
+  padding: 20px;
+
+}
+
+#topElectroniceBrand .allBrand .miPhone {
+  background: #FFECDF;
+}
+
+.allBrand .applePhone .applebg,
+.allBrand .realmePhone .realmebg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.allBrand .applePhone .phone,
+.allBrand .realmePhone .phone {
+  align-items: flex-start;
+}
+
+.applePhone .phone .appleleft p,
+.realmePhone .phone .realmeleft p {
+  max-width: 99px;
+  padding: 9px 20px;
+  border-radius: 8px;
+  background: #494949;
+  color: #FFF;
+  font-size: 14px;
+  letter-spacing: 1.4px;
+  text-align: center;
+}
+
+.realmePhone .phone .realmeleft p {
+  background: #F6DE8D;
+  color: #000;
+
+}
+
+.realmePhone .phone .mileft p {
+  background: #FFD1B0;
+  color: #222;
+}
+
+.applePhone .phone .appleleft .imgbg {
+  width: 62px;
+  height: 62px;
+  border-radius: 16px;
+  background: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.realmePhone .phone .realmeleft .imgbg {
+  margin: 20px 0;
+}
+
+.realmePhone .phone .realmeleft h3,
+.applePhone .phone .appleleft h3 {
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.realmePhone .phone .realmeleft h3 {
+  color: #000;
+
+}
+
+
+
+/* =============================================
+Daily Essentials section
+============================================= */
+#dailyEssentials {
+  margin-bottom: 120px;
+}
+
+.dailyEss .item .border {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 187px;
+  height: 187px;
+  border-radius: 16px;
+  background: #F5F5F5;
+  transition: all .5s ease;
+}
+
+.dailyEss .item .border:hover {
+  border: 1px solid #008ECC;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.05), 0px 3px 7px 0px rgba(0, 0, 0, 0.05), 0px 13px 13px 0px rgba(0, 0, 0, 0.04), 0px 29px 18px 0px rgba(0, 0, 0, 0.03), 0px 52px 21px 0px rgba(0, 0, 0, 0.01), 0px 82px 23px 0px rgba(0, 0, 0, 0.00);
+}
+
+.dailyEss .item {
+  cursor: pointer;
+}
+
+.dailyEss .item h5 {
+  color: #666;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 20px 0 2px 0;
+}
+
+.dailyEss .item h3 {
+  color: #222;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+
+
+/* =============================================
+Footer section
+============================================= */
+footer {
+  padding-top: 80px;
+  background: #008ECC;
+  position: relative;
+  overflow: hidden;
+  /* max-width: 1400px; */
+  margin: 0 auto;
+}
+
+footer .smallCircle {
+  position: absolute;
+  top: -101.8px;
+  right: -145.8px;
+  width: 434.492px;
+  height: 434.492px;
+  border-radius: 434.492px;
+  background: #0C9BDA;
+}
+
+footer .bigCircle {
+  position: absolute;
+  top: -118px;
+  right: -162px;
+  width: 467.079px;
+  height: 467.079px;
+  border-radius: 467.079px;
+  border: 1px solid #05ABF3;
+}
+
+footer .container {
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 85px;
+}
+
+footer .footerLeft {
+  max-width: 378px;
+}
+
+footer .footerLeft .footerLogo {
+  margin-bottom: 34px;
+  cursor: pointer;
+}
+
+footer .footerLeft h5 {
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+footer .footerLeft .whatsApp {
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 11px;
+}
+
+footer .whatsApp .whatsAppright .text {
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 3px;
+}
+
+footer .whatsApp {
+  margin-top: 20px;
+}
+
+footer .whatsApp {
+  cursor: pointer;
+}
+
+footer .whatsApp .whatsAppright .number {
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+
+}
+
+footer .footerLeft h4 {
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 30px 0 20px 0;
+  cursor: pointer;
+}
+
+footer .footerLeft .App {
+  gap: 20px;
+}
+
+footer .footerLeft .App .app1,
+footer .footerLeft .App .app2 {
+  cursor: pointer;
+}
+
+footer .footerMiddle h3 {
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 20px;
+  padding-bottom: 16px;
+  border-bottom: 3px solid #fff;
+  margin-bottom: 20px;
+}
+
+footer .footerMiddle .underline {
+  max-width: 172px;
+}
+
+footer .footerMiddle ul {
+  list-style: disc;
+  color: #fff;
+  margin-left: 25px;
+}
+
+footer .footerMiddle ul li {
+  line-height: 39px;
+}
+
+footer .footerMiddle ul li a {
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+footer .coppyRight {
+  margin-top: 80px;
+  padding: 30px 0;
+  border-top: 1px solid #05ABF3;
+  justify-content: center;
+
+}
+
+footer .coppyRight p {
+  color: #FFF;
+  font-size: 20px;
+  line-height: 20px;
+}
